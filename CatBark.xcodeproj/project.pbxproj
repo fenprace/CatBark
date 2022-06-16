@@ -7,7 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		19ACD842285B3225002DA840 /* StatusBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19ACD841285B3225002DA840 /* StatusBar.swift */; };
+		19984233285B63AE00FAB6C9 /* CBMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19984232285B63AE00FAB6C9 /* CBMenu.swift */; };
+		19984235285B676000FAB6C9 /* CBBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19984234285B676000FAB6C9 /* CBBarItem.swift */; };
+		19984237285B6EFC00FAB6C9 /* Conf.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19984236285B6EFC00FAB6C9 /* Conf.swift */; };
+		19ACD842285B3225002DA840 /* CBBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19ACD841285B3225002DA840 /* CBBar.swift */; };
 		19BB3208285B30F0004BE6BF /* CatBarkApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BB3207285B30F0004BE6BF /* CatBarkApp.swift */; };
 		19BB320A285B30F0004BE6BF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BB3209285B30F0004BE6BF /* ContentView.swift */; };
 		19BB320C285B30F2004BE6BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19BB320B285B30F2004BE6BF /* Assets.xcassets */; };
@@ -36,7 +39,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		19ACD841285B3225002DA840 /* StatusBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusBar.swift; sourceTree = "<group>"; };
+		19984232285B63AE00FAB6C9 /* CBMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CBMenu.swift; sourceTree = "<group>"; };
+		19984234285B676000FAB6C9 /* CBBarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CBBarItem.swift; sourceTree = "<group>"; };
+		19984236285B6EFC00FAB6C9 /* Conf.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Conf.swift; sourceTree = "<group>"; };
+		19ACD841285B3225002DA840 /* CBBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CBBar.swift; sourceTree = "<group>"; };
 		19BB3204285B30F0004BE6BF /* CatBark.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CatBark.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		19BB3207285B30F0004BE6BF /* CatBarkApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatBarkApp.swift; sourceTree = "<group>"; };
 		19BB3209285B30F0004BE6BF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -76,6 +82,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		19984231285B638C00FAB6C9 /* Bar */ = {
+			isa = PBXGroup;
+			children = (
+				19984232285B63AE00FAB6C9 /* CBMenu.swift */,
+				19ACD841285B3225002DA840 /* CBBar.swift */,
+				19984234285B676000FAB6C9 /* CBBarItem.swift */,
+				19984236285B6EFC00FAB6C9 /* Conf.swift */,
+			);
+			path = Bar;
+			sourceTree = "<group>";
+		};
 		19BB31FB285B30F0004BE6BF = {
 			isa = PBXGroup;
 			children = (
@@ -99,10 +116,10 @@
 		19BB3206285B30F0004BE6BF /* CatBark */ = {
 			isa = PBXGroup;
 			children = (
+				19984231285B638C00FAB6C9 /* Bar */,
 				19BB3232285B3104004BE6BF /* AppDelegate.swift */,
 				19BB3207285B30F0004BE6BF /* CatBarkApp.swift */,
 				19BB3209285B30F0004BE6BF /* ContentView.swift */,
-				19ACD841285B3225002DA840 /* StatusBar.swift */,
 				19BB320B285B30F2004BE6BF /* Assets.xcassets */,
 				19BB3210285B30F2004BE6BF /* CatBark.entitlements */,
 				19BB320D285B30F2004BE6BF /* Preview Content */,
@@ -266,9 +283,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				19BB3233285B3104004BE6BF /* AppDelegate.swift in Sources */,
+				19984235285B676000FAB6C9 /* CBBarItem.swift in Sources */,
 				19BB320A285B30F0004BE6BF /* ContentView.swift in Sources */,
 				19BB3208285B30F0004BE6BF /* CatBarkApp.swift in Sources */,
-				19ACD842285B3225002DA840 /* StatusBar.swift in Sources */,
+				19984237285B6EFC00FAB6C9 /* Conf.swift in Sources */,
+				19984233285B63AE00FAB6C9 /* CBMenu.swift in Sources */,
+				19ACD842285B3225002DA840 /* CBBar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

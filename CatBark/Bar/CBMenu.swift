@@ -1,5 +1,5 @@
 //
-//  StatusBar.swift
+//  CBMenu.swift
 //  CatBark
 //
 //  Created by Zhuo FENG on 2022/6/16.
@@ -41,43 +41,11 @@ struct CBMenu {
             item.nsMenuItem?.title = item.title
             item.nsMenuItem?.image = item.image
             item.nsMenuItem?.target = target
-            item.nsMenuItem?.action = #selector(StatusBar.action)
+            item.nsMenuItem?.action = #selector(CBBarItem.action)
             
             menu.addItem(item.nsMenuItem!)
         }
         
         return menu
-    }
-}
-
-class StatusBar {
-    private var statusItem: NSStatusItem?
-    private var cbMenu: CBMenu?
-    
-    func start() {
-        let cbMenuItem = CBMenuItem(
-            title: "Quit",
-            image: NSImage(systemSymbolName: "escape", accessibilityDescription: nil),
-            action: {
-                NSApp.terminate(nil)
-            }
-        )
-        
-        cbMenu = CBMenu([cbMenuItem])
-        
-        statusItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.variableLength)
-        statusItem?.button?.title = "🐱"
-        
-        let menu = cbMenu!.toNSMenu(target: self)
-        statusItem?.menu = menu
-    }
-    
-    @objc func action(sender: NSMenuItem) {
-        for item in cbMenu!.items {
-            if item.nsMenuItem == sender {
-                print("\(sender.title) clicked!")
-                item.action?()
-            }
-        }
     }
 }

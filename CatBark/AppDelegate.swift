@@ -8,14 +8,37 @@
 import Foundation
 import AppKit
 
+class BarManager {
+    static func getBar() -> CBBar {
+        let cbMenuItem = CBMenuItem(
+            title: "Quit",
+            image: NSImage(systemSymbolName: "escape", accessibilityDescription: nil),
+            action: {
+                NSApp.terminate(nil)
+            }
+        )
+        
+        let cbMenu = CBMenu([cbMenuItem])
+        
+        let catBarItem = CBBarItem(CBBarItemOpts(title: "🐱", menu: cbMenu))
+        let dogBarItem = CBBarItem(CBBarItemOpts(title: "🐶", menu: cbMenu))
+        
+        let cbBar = CBBar([catBarItem, dogBarItem])
+        
+        return cbBar
+    }
+}
+
+
 class AppDelegate: NSObject, NSApplicationDelegate {
-    private var statusBar: StatusBar?
+    private var bar: CBBar?
     
     func applicationDidFinishLaunching(_ notification: Notification) {
         print("Launched!")
         
-        statusBar = StatusBar()
-        statusBar?.start()
+        ConfManager().evaluate()
+        
+        bar = BarManager.getBar()
     }
     
     func applicationWillTerminate(_ notification: Notification) {
