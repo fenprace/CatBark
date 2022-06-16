@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		19ACD842285B3225002DA840 /* StatusBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19ACD841285B3225002DA840 /* StatusBar.swift */; };
 		19BB3208285B30F0004BE6BF /* CatBarkApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BB3207285B30F0004BE6BF /* CatBarkApp.swift */; };
 		19BB320A285B30F0004BE6BF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BB3209285B30F0004BE6BF /* ContentView.swift */; };
 		19BB320C285B30F2004BE6BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19BB320B285B30F2004BE6BF /* Assets.xcassets */; };
@@ -14,6 +15,7 @@
 		19BB321A285B30F2004BE6BF /* CatBarkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BB3219285B30F2004BE6BF /* CatBarkTests.swift */; };
 		19BB3224285B30F2004BE6BF /* CatBarkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BB3223285B30F2004BE6BF /* CatBarkUITests.swift */; };
 		19BB3226285B30F2004BE6BF /* CatBarkUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BB3225285B30F2004BE6BF /* CatBarkUITestsLaunchTests.swift */; };
+		19BB3233285B3104004BE6BF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BB3232285B3104004BE6BF /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		19ACD841285B3225002DA840 /* StatusBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusBar.swift; sourceTree = "<group>"; };
 		19BB3204285B30F0004BE6BF /* CatBark.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CatBark.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		19BB3207285B30F0004BE6BF /* CatBarkApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatBarkApp.swift; sourceTree = "<group>"; };
 		19BB3209285B30F0004BE6BF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -45,6 +48,7 @@
 		19BB321F285B30F2004BE6BF /* CatBarkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CatBarkUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		19BB3223285B30F2004BE6BF /* CatBarkUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatBarkUITests.swift; sourceTree = "<group>"; };
 		19BB3225285B30F2004BE6BF /* CatBarkUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatBarkUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		19BB3232285B3104004BE6BF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,8 +99,10 @@
 		19BB3206285B30F0004BE6BF /* CatBark */ = {
 			isa = PBXGroup;
 			children = (
+				19BB3232285B3104004BE6BF /* AppDelegate.swift */,
 				19BB3207285B30F0004BE6BF /* CatBarkApp.swift */,
 				19BB3209285B30F0004BE6BF /* ContentView.swift */,
+				19ACD841285B3225002DA840 /* StatusBar.swift */,
 				19BB320B285B30F2004BE6BF /* Assets.xcassets */,
 				19BB3210285B30F2004BE6BF /* CatBark.entitlements */,
 				19BB320D285B30F2004BE6BF /* Preview Content */,
@@ -259,8 +265,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				19BB3233285B3104004BE6BF /* AppDelegate.swift in Sources */,
 				19BB320A285B30F0004BE6BF /* ContentView.swift in Sources */,
 				19BB3208285B30F0004BE6BF /* CatBarkApp.swift in Sources */,
+				19ACD842285B3225002DA840 /* StatusBar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

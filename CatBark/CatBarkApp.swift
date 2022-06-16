@@ -6,11 +6,18 @@
 //
 
 import SwiftUI
+import AppKit
 
 @main
 struct CatBarkApp: App {
+    @NSApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
+
     var body: some Scene {
-        WindowGroup {
+//        WindowGroup {
+//            ContentView()
+//        }
+        
+        Settings {
             ContentView()
         }
     }
